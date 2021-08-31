@@ -195,7 +195,6 @@ public:
 			}
 			printBoard();
 			std::cout << "\nIt's a draw!\n" << std::endl;
-			player_1.printVerboseScore();
 			return true;
 		}
 	}

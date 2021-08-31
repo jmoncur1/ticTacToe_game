@@ -13,9 +13,9 @@ int main(){
 	std::cout << "\nWelcome to Tic Tac Toe!" << std::endl;
 	Player player_1;
 	Player player_2;
-
 	player_2.deconflictPlayerTypes(player_1);
-
+	
+	std::cout << "\nThere will be three round of games to decide the winner,\nif there is a draw a winner will be decided through a sudden death play off!" << std::endl;
 	for (int i = 0; i <= 2; i++)
 	{
 		the_game.take9AlternatingTurns(player_1, player_2, i+1);
@@ -33,7 +33,7 @@ int main(){
 	}
 	else if (player_1.getScore() == player_2.getScore())
 	{
-		std::cout << "Its a draw :0" << std::endl;
+		std::cout << "Its a draw, we will now have a sudden death play off to find the winner :0" << std::endl;
 		while (player_1.getScore() == player_2.getScore())
 		{
 			deathmatch_counter = deathmatch_counter + 1;
